@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form example</title>
+    <style>
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkC6l6621AgWKERW70D4oB-E7ZSbGoB2PNiA&s");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .signup{
+            /* border */
+            border: 10px inset black;
+            /* curv the corners */
+            border-radius: 10px;
+            width: 600px;
+            height: 400px;
+            /* margin outside space */
+            margin-left: 300px;
+            margin-top: 100px;
+            /* inside space */
+            padding: 20px;
+            /* background color */
+            background-color:rgb(244 232 247);
+            /* background-image: linear-gradient(rgb(235, 184, 184), rgb(236, 163, 103), rgb(194, 211, 99), yellow, blue); */
+            /* text-align: center; */
+        }
+        .form-title{
+            text-align: center;
+        }
+        input{
+            margin: 6px;
+            margin-right: 5px;
+            /* outline: 1px solid black; */
+            border: 1px solid black;
+            border-radius: 2px;
+            height: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        label{
+            color: rgb(59 72 212);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .submit{
+            margin-left: 23vw;
+            margin-top: 1vh;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 21px;
+        }
+        .submit:hover{
+            background-color: rgb(124 133 251);
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h1 class="form-title">SignUp form</h1>
+        <form>
+            <!-- choice : give suggetion  or title -->
+            <label for="fname">First Name: </label>
+            <input type="text" name="" id="fname" placeholder="Enter your first name" autofocus>
+            <!-- <br> -->
+            <label for="lname">Last Name: </label>
+            <input type="text" name="" id="lname" placeholder="Enter your last name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" placeholder="Enter your email id">
+            <!-- <br> -->
+            <label for="age">Age:</label>
+            <input type="number" name="" id="age">
+            <br>
+            <label for="">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="">
+            <br>
+            <label for="addres">Address:</label>
+            <textarea name="" id="address"></textarea> <!--you can also have rows="10" cols="10"-->
+            <br>
+            <label for="work">Are you working somewhere?</label>
+            <input type="checkbox" name="" id="work">
+            <br>
+            <label for="interest">Are interested in Learning new things?</label>
+            <input type="checkbox" name="" id="interest">
+            <br>
+            <label for="state">State:</label>
+            <select name="" id="state">
+                <option value="">Choose your state</option>
+                <option value="Karanataka">Karanataka</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select>
+            <br>
+            <label for="college">College:</label>
+            <input type="text" name="" id="college" list="college-list" placeholder="Enter your college name">
+            <datalist id="college-list">
+                <option value="IIT Delhi">
+                <option value="NIT">
+                <option value="VIT">
+                <option value="Manipal">
+            </datalist>
+            <br>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
