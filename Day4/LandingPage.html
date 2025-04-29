@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+    body{
+        background-color: #ffffff;
+        padding: 1vw;
+        font-family:'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 10px;
+
+      }
+      .navLink{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+      }
+      nav{
+        /* border: 2px solid black; */
+        display: flex;
+        /* justify-content: space-around; */
+        padding: 10px;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+     .btn{
+        background-color: black;
+        color: #ffffff;
+        padding: 10px;
+        width: 80px;
+        border-radius: 10px;
+        text-align: center;
+     }
+     li>a{
+        text-decoration: none;
+        color: black;
+     }
+     .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+     }
+    .herobtn{
+        background-color: black;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80px;
+        margin: 10px;
+    }
+    .title{
+        font-size: 7vh;
+    }
+    .disc{
+        margin-top: -5px;
+        color: #828282;
+    }
+    .himg{
+        border-radius: 10px;
+        /* width: 80%; */
+        margin-top: 30px;
+    }
+    .people{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+    }
+    .card{
+        width: 30%;
+        height: 20vh;
+        box-shadow: 0px 0px 2px 1px rgb(214, 207, 207);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+    }
+    .pimg{
+        width: 2.5vw;
+        height: 5vh;
+        border-radius: 50%;
+    }
+    .profile{
+        display: flex;
+        /* flex-direction: ; */
+        /* justify-content: space-around; */
+        gap: 10px;
+        align-items: center;
+    }
+    .user{
+        display: flex;
+        flex-direction: row;
+    }
+    hr{
+       margin-left: 5vw;
+       margin-right: 5vw;
+    }
+    </style>
+</head>
+<body>
+    <!-- figma link: https://www.figma.com/design/Yv2UTxnVVVWgB9d0MARM4B/Basic-website-kit-by-Figma--Community-?node-id=0-1&p=f&t=oHhrgQ0LY1bAjX5A-0 -->
+     <header>
+        <nav>
+            <p>PrepInsta</p>
+            <ul class="navLink">
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li class="btn">Button</li>
+            </ul>
+        </nav>
+     </header>
+     <section class="hero">
+        <p class="title">Hello Prepsters !</p>
+        <p class="disc">Welcome to the FSD class. Let's go....</p>
+        <div class="herobtn">Button</div>
+        <img src="./hero.jpg" class="himg" alt="hero image">
+     </section>
+     <section class="people">
+        <h1>Heading</h1>
+        <span>Subheading to introduce testimonials</span>
+        <div class="user">
+            <div class="card">
+                <p>“A terrific piece of praise”</p>
+                <div class="profile">
+                    <img src="./hero.jpg" class="pimg" alt="profile">
+                    <div class="detail">
+                        <p>name</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>“A terrific piece of praise”</p>
+                <div class="profile">
+                    <img src="./hero.jpg" class="pimg" alt="profile">
+                    <div class="detail">
+                        <p>name</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>“A terrific piece of praise”</p>
+                <div class="profile">
+                    <img src="./hero.jpg" class="pimg" alt="profile">
+                    <div class="detail">
+                        <p>name</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+     </section>
+     <hr>
+     <footer>
+
+     </footer>
+
+</body>
+</html>

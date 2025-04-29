@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo classes</title>
+    <style>
+        .g:active{
+            color: black;
+        }
+        .f:visited{
+            color: brown;
+        }
+        .I:link{
+            color: blueviolet;
+        }
+        .I:hover{
+            background-color: rgb(229, 229, 29);
+        }
+        li:first-child{
+            background-color: yellow;
+        }
+        a:last-child{
+            background-color: aqua;
+        }
+        li:nth-child(2){
+            background-color: blueviolet;
+        }
+        li:not(.s){
+            border: 2px solid red;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.google.com" class="g">Google</a>
+        <a href="https://www.facebook.com" class="f">FaceBook</a>
+        <a href="https://www.youtube.com" class="y">Youtube</a>
+        <a href="https://www.instagram.com" class="I">Insta</a>
+    </div>
+    <ul>
+        <li>First</li>
+        <li class="s">second</li>
+        <li>Third</li>
+    </ul>
+</body>
+</html>
