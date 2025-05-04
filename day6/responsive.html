@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+
+    <style>
+        img{
+            width: 23%;
+            height: 40vh;
+            border-radius: 50%;
+        }
+        @media screen and (min-width:1281px)  {
+            .container{
+                display: flex;
+                gap: 2%;
+                margin-top: 10vh;
+
+            }
+            .about{
+                width: 60%;
+            }
+            img{
+                width: 28%;
+                height: 45vh;
+            }
+        }
+        @media screen and (max-width:1280px)  {
+            .container{
+                display: flex;
+                gap: 2%;
+                margin-top: 10vh;
+
+            }
+            .about{
+                width: 60%;
+            }
+            img{
+                width: 28%;
+                height: 45vh;
+            }
+        }
+        @media screen and (max-width:1024px)  {
+            .container{
+                display: flex;
+                gap: 2%;
+                margin-top: 10vh;
+
+            }
+            .about{
+                width: 60%;
+            }
+            img{
+                width: 33%;
+                height: 36vh;
+            }
+        }
+        @media screen and (max-width:768px)  {
+            .container{
+                display: flex;
+                gap: 2%;
+                margin-top: 10vh;
+
+            }
+            .about{
+                width: 60%;
+            }
+            img{
+                width: 33%;
+                height: 28vh;
+            }
+        }
+        
+        @media screen and (max-width:600px){
+            img{
+                width: 95%;
+                height: 45vh;
+                /* padding: 2.5%; */
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1{
+                text-align: center;
+            }
+            .about{
+                width: 95%;
+            }
+           
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- Read the following blog -->
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries -->
+    <div class="container">
+        <div class="about">
+            <h1>Aboot me</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt impedit non eligendi omnis hic sit eum doloribus, explicabo a expedita eveniet odit eius debitis dolores odio sunt aut veniam molestias.</p>
+        </div>
+        <img src="./hero.jpg" alt="profile">
+    </div>
+</body>
+</html>
